@@ -3,7 +3,7 @@ const server = express();
 const PORT = 80;
 
 server.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join('index.html'));
 });
 
 server.listen(PORT, () => console.log(`Sever running on ${PORT}`));
